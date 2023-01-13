@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option go_package = "github.com/andy5920/protocols/stocks";
+
+package stocks;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc Search (Request) returns (Reply) {}
+}
+
+// The request message containing the user's name.
+message Request {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message Reply {
+  string message = 1;
+}
+
